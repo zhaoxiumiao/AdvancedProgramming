@@ -8,4 +8,6 @@
    - Symbol.keyFor(Symbol) 查找一个 
 ### Null
    - 当要未来要定义值，现在请先赋值为null
-### 
+### 异步迭代(asynchronous iteration)
+   - 要解决的问题是：
+      - 使用同步迭代器迭代异步确定的值时，主线程会被堵塞，以等待异步操作完成
