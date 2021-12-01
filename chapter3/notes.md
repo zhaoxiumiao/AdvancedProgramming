@@ -86,3 +86,73 @@
    - 操作数都是字符串则比较字符编码
    - 操作数有一个是数值，则转换数值进行比较
    - 操作数有一个是NaN ，都是false
+
+### 相等操作符
+   - 相等操作符分为 等于(==)和全等(===)
+   - (==): 会进行类型转换 (===): 不会进行类型转换
+   - NaN 不等于 NaN
+
+### 条件操作符(又称三元运算符)
+   - 例如: `variable = boolean_expressing ? true_value : false_value`
+
+### 赋值操作符(=)
+   - 也可以使用符合例如: `+=`
+
+### 逗号操作符
+   - `let num1 = 1, num2 = num2, num3 = 3`
+   - `let num = (5, 1, 4, 8, 0)` num == 0
+
+### if 语句
+   - `if` `else if` `else`
+
+### do-while 语句
+   - 后测试循环体
+   - `do {} while(condition)`
+
+### while 语句
+   - 先测试循环体
+   - `while(condition){}`
+
+### for 语句
+   - 先测试循环体
+   - `for(initialization, expression, post-loop-expression) statement`
+   - `for(let i = 0; i < 10; i++;) {}` 这个是通常写法
+
+### for-in 语句
+   - 迭代语句，用于枚举对象中的非符号键属性
+   - `for(property in expression) statement`
+
+### for-of 语句
+   - 用于遍历可迭代对象的元素
+   - `for(property of expression) statement`
+
+### 标签语句
+   - `label:statement`
+
+### break && continue
+   - 都是循环控制语句
+   - 后面可以跟标签`break label`
+
+### with语句
+   - 不推荐使用
+
+### switch 语句
+```js 
+switch (expression){
+   case value1:
+      statement
+      break;
+   case value2:
+      statement
+      break;
+   default:
+      statement
+}
+```
+   - switch 比较使用的全等操作符
+   - 不写break 会从第一个匹配为true的地方向下执行
+
+### 函数
+   - `function functionName(arg0, arg1, ..., argN){}`
+   - 函数中遇到return 会停止执行
+   - 函数的最佳实践是要么有返回值，要么没有返回值
