@@ -91,7 +91,20 @@ let pattern = /.at/
 
 // toLocaleString toString
 
-pattern = new RegExp('\\[bc\\]at', 'gi')
-console.log(pattern.toString())
-console.log(pattern.toLocaleString())
-console.log(pattern.valueOf())
+// pattern = new RegExp('\\[bc\\]at', 'gi')
+// console.log(pattern.toString())
+// console.log(pattern.toLocaleString())
+// console.log(pattern.valueOf())
+
+text = 'this has been a short summer'
+
+pattern = /(.)hort/g
+
+if(pattern.test(text)){
+  console.log(RegExp.input);
+  console.log(RegExp.lastMatch)
+  console.log(RegExp.lastParen);
+  console.log(RegExp.leftContext);
+  console.log(RegExp.rightContext);
+  console.log(RegExp.$1);
+}
